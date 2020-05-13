@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "nodestack-ui"
+    }
+  },
+  "defaultProject": "nodestack-ui",
+  "cli": {
+    "analytics": "d95508c8-b04e-43b7-be6c-d0d24dd3dc22"
+  }
 }
