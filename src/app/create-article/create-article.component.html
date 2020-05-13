@@ -1,0 +1,20 @@
+<div class="login">
+    <h2>Create Article</h2>
+    <form  [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input required type="text" class="form-control" placeholder="Enter title" formControlName="title"
+             name="title" id="title">
+        </div>
+        <div class="form-group">
+            <label for="body">Body:</label>
+            <textarea required class="form-control" rows="5" formControlName="body" 
+             name="body" placeholder="Enter body" id="body"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="author">Author:</label>
+            <input type="text" required class="form-control"  formControlName="author" placeholder="Enter author" name="author" id="author">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>

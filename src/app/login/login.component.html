@@ -1,0 +1,20 @@
+<div class="login">
+    <h2>Login form</h2>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+            <label for="username">User Name:</label>
+            <input type="text" class="form-control" autocomplete="off" id="username" formControlName="username" placeholder="Enter username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" formControlName="password" id="pwd" placeholder="Enter password" name="pwd">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+<div class="link-route">
+    <a [routerLink]="['/register']">Have not account yet?  Sign up</a>
+</div>

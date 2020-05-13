@@ -1,0 +1,26 @@
+<div class="register">
+    <h2>Register form</h2>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+            <label for="username">User Name:</label>
+            <input type="text" class="form-control" autocomplete="on" formControlName="username" id="username" placeholder="Enter username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" formControlName="password" id="password" placeholder="Enter password" name="password">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea class="form-control" rows="5" formControlName="address" id="address" placeholder="Enter address"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+
+<div class="link-route">
+    <a [routerLink]="['/login']">I'm already a member</a>
+</div>
